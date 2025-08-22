@@ -10,12 +10,12 @@
     :root {
       --rock-lime: #dce293; /* cor da referência enviada */
     }
-    html, body { height: 100%; }
-    body { overflow-y: auto; }
+    html { height: auto; }
+    body { min-height: 100vh; overflow-y: auto; -webkit-overflow-scrolling: touch; }
     .soft-card { border-radius: 1.25rem; box-shadow: 0 10px 30px rgba(0,0,0,.08); }
     .graphic-bg {
       position: relative;
-      min-height: 100%;
+      min-height: 100vh;
     }
     .graphic-bg::before, .graphic-bg::after {
       content: "";
